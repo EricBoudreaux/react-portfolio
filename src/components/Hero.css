@@ -1,0 +1,12 @@
+.container-hero {
+    background-image: url("../img/hero_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

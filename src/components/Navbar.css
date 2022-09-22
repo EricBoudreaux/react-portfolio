@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 15px;
+    box-shadow: -5px 5px 15px black;
+    background-color: var(--bg-1);
+
+}
+.site-title {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.nav a:hover {
+    background: -webkit-linear-gradient(180deg, #5c258d, #4389a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    padding-top: 12px
+}
