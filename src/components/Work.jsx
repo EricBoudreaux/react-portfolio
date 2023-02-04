@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './/Button'
 
-import 'animate.css';
+
 
 import ButtonInvert from './ButtonInvert'
 
@@ -23,7 +23,7 @@ const Work = () => {
         <h1 className='text-center lg:text-left lg:ml-24 text-3xl my-12'>My work</h1>
         <div className='flex flex-col gap-4'>
             {/* card 1 */}
-            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto animate__animated animate__slideInRight'>
+            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={myWeather} className='h-[210px] object-contain' alt="" />
@@ -57,7 +57,7 @@ const Work = () => {
 
 
             {/* card 2 */}
-            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto animate__animated animate__slideInRight'>
+            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={politics} className='h-[210px] object-contain' alt="" />
@@ -90,7 +90,7 @@ const Work = () => {
                 </div>
             </div>
             {/* card 3 */}
-            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto animate__animated animate__slideInRight'>
+            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={chatter} className='h-[210px] object-contain' alt="" />
@@ -123,7 +123,7 @@ const Work = () => {
                 </div>
             </div>
             {/* card 4 */}
-            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto animate__animated animate__slideInRight'>
+            <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={photography} className='h-[210px] object-contain' alt="" />

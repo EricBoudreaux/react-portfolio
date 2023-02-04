@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
 
-        <div className='absolute bg-[var(--primary-1)] top-28 h-52 md:h-80 sm:mt-16 md:mt-24 lg:hidden w-full rotate-[170deg] z-0'></div>
+        <div className='absolute bg-[var(--primary-1)] top-28 h-52 md:h-80 sm:mt-16 md:mt-24 lg:hidden w-[85%] rotate-[170deg] z-0'></div>
       </div>
         <div className='text-white absolute bottom-8 right-20 hidden lg:block'>
           <Resume />
