@@ -11,9 +11,9 @@ const Contact = () => {
             <div className='md:basis-2/3'>
             <h1 className='lg:text-left text-4xl lg:text-5xl'>Reach out!</h1>
             <div className='flex flex-col gap-5 mt-12'>
-                <input type="text" placeholder='your name' className='w-[150%] md:w-[80%]'/>
-                <input type="email" placeholder='your email' className='w-[150%] md:w-[80%]'/>
-                <textarea rows='5' placeholder="what's on your mind?" className='w-[150%] md:w-[80%]'/>
+                <input type="text" placeholder='your name' className='w-[120%] sm:w-[150%] md:w-[80%]'/>
+                <input type="email" placeholder='your email' className='w-[120%] sm:w-[150%] md:w-[80%]'/>
+                <textarea rows='5' placeholder="what's on your mind?" className='w-[120%] sm:w-[150%] md:w-[80%]'/>
             </div>
 
             <div className='mt-4 mb-12'>
