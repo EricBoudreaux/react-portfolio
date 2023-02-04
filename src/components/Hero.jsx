@@ -12,8 +12,8 @@ const Hero = () => {
         </div>
         <div className='basis-2/3  z-20 lg:mt-10'>
           <h1 className='text-white text-2xl lg:text-4xl'>Hello! I'm</h1>
-          <p className='marker text-[24px] sm:text-2xl md:text-4xl lg:text-5xl'>Eric The <span class="type-words"></span></p>
-          <p className='text-white mt-6 sm:mt-8 md:text-2xl'>Currently based in</p>
+          <p className='marker text-[16px] sm:text-2xl md:text-4xl lg:text-5xl'>Eric The <span class="type-words"></span></p>
+          <p className='text-white mt-6 sm:mt-8 text-[14px] md:text-2xl'>Currently based in</p>
           <h1 className='text-white md:text-2xl'>Portland, Oregon</h1>
 
           

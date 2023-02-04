@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div name='about' className='bg-[var(--primary-1)] w-[90%] mx-auto mt-40 lg:mt-[-80px] pt-12 lg:p-20 xl:p-24 lg:ml-[-60px]'>
         <h1 className='text-center text-[40px]'>All about me</h1>
-        <p className='mt-12 px-12 mx-auto text-[16px]'>When I was a kid I was introduced to computers via 
+        <p className='mt-12 px-12 mx-auto text-[12px] sm:text-[16px]'>When I was a kid I was introduced to computers via 
         my grandmother's Windows 3.0 machine. Little did I 
         know then that experience would blossom into life
         long love for technology. After that, I was never 
