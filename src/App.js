@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/SideBar'
+import MainContent from './components/MainContent'
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ScrollUp />
+      <div className='flex'>
+        <div className='hidden lg:block'>
+        <Sidebar />
+        </div>
+        <div className='lg:basis-4/5 mx-auto w-full'>
+        <MainContent />
+        </div>
+      </div>
+      <Footer />
+      <Copyright />
+    </>
   );
 }
 
