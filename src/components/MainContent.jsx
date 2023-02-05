@@ -4,6 +4,7 @@ import Contact from './Contact'
 import Hero from './Hero'
 
 import Navbar from './Navbar'
+import ResumeModal from './ResumeModal'
 import Skills from './Skills'
 import Work from './Work'
 

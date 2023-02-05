@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+      }
+    },
   },
   plugins: [
     require('tailwind-typewriter')({

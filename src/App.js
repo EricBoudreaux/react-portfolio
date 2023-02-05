@@ -1,23 +1,20 @@
-import Sidebar from './components/SideBar'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer';
-import Copyright from './components/Copyright';
-import ScrollUp from './components/ScrollUp';
+import { Route, Routes } from 'react-router-dom';
+
+
+
+
+import Home from './pages/Home'
+import Resume from './pages/Resume'
+
 
 function App() {
   return (
     <>
-      <ScrollUp />
-      <div className='flex'>
-        <div className='hidden lg:block'>
-        <Sidebar />
-        </div>
-        <div className='lg:basis-4/5 mx-auto w-full'>
-        <MainContent />
-        </div>
-      </div>
-      <Footer />
-      <Copyright />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/resume' element={<Resume />} />
+
+      </Routes>
     </>
   );
 }

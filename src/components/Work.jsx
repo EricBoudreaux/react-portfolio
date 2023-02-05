@@ -129,7 +129,7 @@ const Work = () => {
                         <img src={photography} className='h-[210px] object-contain' alt="" />
                     </div>
                     <div className='basis-1/2 ml-4'>
-                        <p className='text-black lg:text-2xl'>What is your weather</p>
+                        <p className='text-black lg:text-2xl'>Photosen Photography</p>
                         <p className='text-black lg:text-1xl text-sm'>Built Using:</p>
                         <div className='flex flex-col gap-2 mb-4 mt-5'>
                             <div className='flex items-center'>

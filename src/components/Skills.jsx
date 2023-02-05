@@ -2,6 +2,8 @@ import React from 'react'
 
 import Button from '../components/Button'
 
+import { Link } from 'react-router-dom'
+
 const Skills = () => {
   return (
     <div name='skills'>
@@ -36,7 +38,9 @@ const Skills = () => {
                     </div>
             </div>
             <div className='flex justify-center my-12 h-12'>
-            <Button text='view my resume' />
+            <Link target='_blank' to='/resume'>
+                <Button text='view my resume' />
+            </Link>
             </div>
         </div>
     </div>
