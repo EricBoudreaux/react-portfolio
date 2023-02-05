@@ -23,7 +23,7 @@ const Skills = () => {
             </div>
             <h1 className='text-center mt-16 lg:text-left lg:ml-24 text-2xl lg:text-3xl my-12'>Technologies i use</h1>
             <div className='flex justify-center'>
-                <div className='text-[10px] sm:text-[16px] md:text-2xl xl:text-3xl'>
+                <div className='text-[14px] sm:text-[16px] md:text-2xl xl:text-3xl'>
                     <p>HTML/CSS ..................... 3 years</p>
                     <p>Javascript/Tyescript ......... 3 years</p>
                     <p>React ........................ 2 years</p>

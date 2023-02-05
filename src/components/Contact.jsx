@@ -35,7 +35,7 @@ const Contact = () => {
                 {sentButton 
                 ? (
                   <div className=' mb-12' >
-                  <button className='bg-black text-white' disabled={true}>Sent!</button>
+                  <button className='bg-black text-white' disabled={true}>sent!</button>
                 </div>
                 ) 
                 
