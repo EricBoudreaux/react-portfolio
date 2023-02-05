@@ -12,7 +12,7 @@ const [scrollPosition, setScrollPosition] = useState(0);
 const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position)
-    console.log(position)
+
 }
 
 useEffect(() => {

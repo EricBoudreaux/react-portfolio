@@ -25,6 +25,7 @@ const Hero = () => {
         <div className='text-white absolute bottom-8 right-20 hidden lg:block'>
           <ResumeButton />
         </div>
+ 
     </div>
   )
 }

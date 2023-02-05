@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 
+import { useRef } from 'react';
 
 
 import Home from './pages/Home'
@@ -8,6 +9,7 @@ import Resume from './pages/Resume'
 
 
 function App() {
+
   return (
     <>
       <Routes>

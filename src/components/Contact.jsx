@@ -1,17 +1,24 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import ButtonInvert from './ButtonInvert'
-
-import { useForm, ValidationError } from '@formspree/react';
-
+import { db } from '../firebase-config.js'
+import { addDoc, collection } from 'firebase/firestore'
 
 const Contact = () => {
 
-  const [state, handleSubmit] = useForm("mgebojwy");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+  const [newName, setNewName] = useState('')
+  const [newEmail, setNewEmail] = useState('')
+  const [newMessage, setNewMessage] = useState('')
 
+  const [sentButton, setSentButton] = useState(false)
+
+  const messagesCollectionRef = collection(db, 'messages')
+
+  const sendMessage = async () => {
+    await addDoc(messagesCollectionRef, {name: newName, email: newEmail, message: newMessage})
+    setSentButton(true)
   }
+
+
   return (
     <div name='contact'>
     <div className='bg-[var(--primary-1)] mt-24 w-[90%] mx-auto'>
@@ -19,13 +26,27 @@ const Contact = () => {
             <div className='md:basis-2/3'>
             <h1 className='lg:text-left text-4xl lg:text-5xl'>Reach out!</h1>
 
-              <form  className='flex flex-col gap-5 mt-12' onSubmit={handleSubmit}>
-                <input type="text" placeholder='your name' className='w-[120%] sm:w-[150%] md:w-[80%]'/>
-                <input type="email" placeholder='your email' className='w-[120%] sm:w-[150%] md:w-[80%]'/>
-                <textarea rows='5' placeholder="what's on your mind?" className='textarea1 w-[120%] sm:w-[150%] md:w-[80%]'/>
-                <div className=' mb-12'>
-                  <ButtonInvert type="submit" disabled={state.submitting} text='send' />
+              <form  className='flex flex-col gap-5 mt-12'>
+                <input type="text" placeholder='your name' className='w-[120%] sm:w-[150%] md:w-[80%]' onChange={(event) => {setNewName(event.target.value)}}/>
+                <input type="email" placeholder='your email' className='w-[120%] sm:w-[150%] md:w-[80%]'
+                onChange={(event) => {setNewEmail(event.target.value)}}/>
+                <textarea rows='5' placeholder="what's on your mind?" className='textarea1 w-[120%] sm:w-[150%] md:w-[80%]'
+                onChange={(event) => {setNewMessage(event.target.value)}}/>
+                {sentButton 
+                ? (
+                  <div className=' mb-12' >
+                  <button disabled={true}>Sent!</button>
                 </div>
+                ) 
+                
+                : (
+                  <div className=' mb-12' onClick={sendMessage}>
+                    <ButtonInvert text='send' />
+                </div>
+                )
+                }
+
+
             </form>
 
 

@@ -10,7 +10,7 @@ const About = () => {
       const position = window.pageYOffset;
 
       setBoxMargin(position + 'px')
-      console.log(boxMargin)
+
   }
   
   useEffect(() => {
