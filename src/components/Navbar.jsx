@@ -43,7 +43,7 @@ const [nav, setNav] = useState(false);
       <div className='flex justify-center'>
         <img src="https://s3-alpha-sig.figma.com/img/680e/9400/992f20259bc56860db1b028f52eb3d33?Expires=1675641600&Signature=LbBUjsySA7~-shYaZJn967b~zWffDFzuDUi~BpiG4wGLCPXXbqPE5a-JJNCqZ0MmDzMMsU-SZVjpAaea3Y6vcxPZrS63dQWSAuUAdwUxV6WBOvNUZe2t4BZ0zo0ReXTzhKk20sT5FJEKDNZlUs6PDqS9uwLIunfvqf7jv59qfwZ-NCd4Z5wfZgLJDdxDXaZ--KkOCkBPU0x9FdMbPmjdQf9OGUkdVaxZhvloOLfZf1M3IpRjm17GSgAwvCrIupAMegSGHtc9uxAaYiSOg2~JZby4atWtZ-05ShUwr0hiXMX-FKxgI6u-ZwfeMEzO5MmWvKbLe8H59D~gikazPWoCBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="/me waving" className='w-[20%] h-[20%] my-auto'/>
 
-          <div className='text-white flex flex-col pt-60 text-center'>
+          <div className='text-white flex flex-col pt-32 text-center'>
 
             <Link onClick={() => setNav(!nav)} className='my-4 text-5xl hover:scale-105 hover:text-[var(--primary-1)] ease-in duration-200 cursor-pointer rotate-6 hover:rotate-0'>Home</Link>
             <Link onClick={() => setNav(!nav)} to='about' smooth={true} offset={-20} className='my-4 text-5xl hover:scale-105 hover:text-[var(--primary-1)] ease-in duration-200 cursor-pointer rotate-6 hover:rotate-0'>About</Link>

@@ -23,7 +23,7 @@ useEffect(() => {
     }
 }, []);
   return (
-    <div className={scrollPosition > 75 ? 'z-50 fixed right-8 bottom-5 ease-in duration-300' : 'z-50 fixed right-[-50px] bottom-5 ease-in duration-300'}>
+    <div className={scrollPosition > 75 ? 'z-50 fixed right-14 bottom-5 ease-in duration-300' : 'z-50 fixed right-[-50px] bottom-5 ease-in duration-300'}>
         <div className='w-12 h-12 bg-black text-[var(--primary-1)] cursor-pointer flex justify-center items-center hover:scale-105'>
         <Link to='hero' smooth={true} offset={-180}><BsArrowUp size={15}/></Link>
         </div>

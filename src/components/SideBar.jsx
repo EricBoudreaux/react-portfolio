@@ -5,7 +5,7 @@ import AboutEmote from '../img/About_emote.png'
 
 const SideBar = () => {
   return (
-    <div className='bg-[var(--light)] pt-12 pl-4 h-[4350px]'>
+    <div className='bg-[var(--light)] pt-12 pl-4 h-[4356px]'>
 
         <div className='hero h-screen'>
           <h1 className="font-light text-black text-1xl lg:text-2xl">Eric Boudreaux</h1>

@@ -26,7 +26,7 @@ const Work = () => {
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
-                        <img src={myWeather} className='h-[210px] object-contain' alt="" />
+                        <img src={myWeather} className='h-[230px] object-cover' alt="" />
                     </div>
                     <div className='basis-1/2 ml-4'>
                         <p className='text-black lg:text-2xl'>What is your weather</p>
@@ -60,7 +60,7 @@ const Work = () => {
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
-                        <img src={politics} className='h-[210px] object-contain' alt="" />
+                        <img src={politics} className='h-[210px] object-cover' alt="" />
                     </div>
                     <div className='basis-1/2 ml-4'>
                         <p className='text-black lg:text-2xl'>Politician 128</p>
@@ -93,7 +93,7 @@ const Work = () => {
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
-                        <img src={chatter} className='h-[210px] object-contain' alt="" />
+                        <img src={chatter} className='h-[210px] object-cover' alt="" />
                     </div>
                     <div className='basis-1/2 ml-4'>
                         <p className='text-black lg:text-2xl'>Chatter</p>
@@ -126,7 +126,7 @@ const Work = () => {
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
-                        <img src={photography} className='h-[210px] object-contain' alt="" />
+                        <img src={photography} className='h-[230px] object-cover' alt="" />
                     </div>
                     <div className='basis-1/2 ml-4'>
                         <p className='text-black lg:text-2xl'>Photosen Photography</p>

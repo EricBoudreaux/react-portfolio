@@ -12,7 +12,7 @@ import Work from './Work'
 
 const MainContent = () => {
   return (
-    <div className='mt-[-30px] lg:border-r-4 mr-4 h-[100.001%]'>
+    <div className='mt-[-30px] lg:border-r-4 mr-12 h-[100.001%]'>
       <Navbar />
       <Hero />
 
