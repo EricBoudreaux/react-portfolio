@@ -6,6 +6,7 @@ import {TiThMenu} from 'react-icons/ti'
 
 import { FaWindowClose } from 'react-icons/fa'
 
+import mobileMe  from '../img/mobile_nav_image.png'
 
 const Navbar = () => {
 
@@ -39,9 +40,9 @@ const [nav, setNav] = useState(false);
         <TiThMenu onClick={() => setNav(!nav)} className='cursor-pointer z-30' size={30}/>
       </div>
       <div className={nav ? '  md:hidden h-screen fixed w-full top-0 left-0 z-30 ease-in duration-200 bg-black' : ' md:hidden h-screen fixed w-full left-[-100%] top-0 z-30 ease-in duration-200 bg-black'}>
-      <FaWindowClose onClick={() => setNav(!nav)} className='absolute top-8 right-12 text-white cursor-pointer z-50' size={30}/>
+      <FaWindowClose onClick={() => setNav(!nav)} className='absolute top-8 right-24 text-white cursor-pointer z-50' size={30}/>
       <div className='flex justify-center'>
-        <img src="https://s3-alpha-sig.figma.com/img/680e/9400/992f20259bc56860db1b028f52eb3d33?Expires=1675641600&Signature=LbBUjsySA7~-shYaZJn967b~zWffDFzuDUi~BpiG4wGLCPXXbqPE5a-JJNCqZ0MmDzMMsU-SZVjpAaea3Y6vcxPZrS63dQWSAuUAdwUxV6WBOvNUZe2t4BZ0zo0ReXTzhKk20sT5FJEKDNZlUs6PDqS9uwLIunfvqf7jv59qfwZ-NCd4Z5wfZgLJDdxDXaZ--KkOCkBPU0x9FdMbPmjdQf9OGUkdVaxZhvloOLfZf1M3IpRjm17GSgAwvCrIupAMegSGHtc9uxAaYiSOg2~JZby4atWtZ-05ShUwr0hiXMX-FKxgI6u-ZwfeMEzO5MmWvKbLe8H59D~gikazPWoCBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="/me waving" className='w-[20%] h-[20%] my-auto'/>
+        <img src={mobileMe} alt="/me waving" className='w-[30%] h-[30%] pt-12 my-auto'/>
 
           <div className='text-white flex flex-col pt-32 text-center'>
 

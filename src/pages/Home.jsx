@@ -14,7 +14,7 @@ const Home = () => {
         <div className='hidden lg:block'>
         <Sidebar />
         </div>
-        <div className='lg:basis-4/5 mx-auto w-full'>
+        <div className='lg:basis-4/6 mx-auto w-full'>
         <MainContent />
         </div>
       </div>

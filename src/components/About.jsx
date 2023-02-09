@@ -34,7 +34,7 @@ const About = () => {
         vicinity. I still feel that same amazement when I 
         open my Macbook Pro twenty-five years later. Since 
         the times of that starry eyed kid, I've discovered 
-        a deep devotion to creativity. That's web 
+        a deep devotion to creativity. That's why web 
         developing makes sense to me. It is the perfect blend of 
         structured creativity I've always striven to achieve. </p>
 <p className='text-white mt-5 font-bold px-12'>The art of creating is a beautiful thing to me.</p>
