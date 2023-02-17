@@ -24,7 +24,7 @@ const Work = () => {
         <div className='flex flex-col gap-4'>
             {/* card 1 */}
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
-                <div className='flex lg:w-[50%] p-4'>
+                <div className='flex flex-col md:flex-row lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={myWeather} className='h-[230px] object-cover' alt="" />
                     </div>
@@ -58,7 +58,7 @@ const Work = () => {
 
             {/* card 2 */}
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
-                <div className='flex lg:w-[50%] p-4'>
+                <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={politics} className='h-[210px] object-cover' alt="" />
                     </div>
@@ -91,7 +91,7 @@ const Work = () => {
             </div>
             {/* card 3 */}
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
-                <div className='flex lg:w-[50%] p-4'>
+                <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={chatter} className='h-[210px] object-cover' alt="" />
                     </div>
@@ -124,7 +124,7 @@ const Work = () => {
             </div>
             {/* card 4 */}
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
-                <div className='flex lg:w-[50%] p-4'>
+                <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
                         <img src={photography} className='h-[230px] object-cover' alt="" />
                     </div>

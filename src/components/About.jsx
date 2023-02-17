@@ -2,6 +2,9 @@ import React, { useState, useEffect} from 'react'
 import { Link } from 'react-scroll'
 import ButtonInvert from './ButtonInvert'
 
+import AboutEmote from '../img/About_emote.png'
+
+
 
 const About = () => {
 
@@ -39,7 +42,7 @@ const About = () => {
         structured creativity I've always striven to achieve. </p>
 <p className='text-white mt-5 font-bold px-12'>The art of creating is a beautiful thing to me.</p>
 <div className='mt-12 lg:mt-0 flex flex-row items-center justify-center gap-12'>
-    <img src="https://s3-alpha-sig.figma.com/img/a26f/9ddb/58b76f16cbaa72ad867dcf6832027a5c?Expires=1676246400&Signature=er1m1Li3vPsSvMs1MCSqfUcYIq~hTi8ojxTiXO-L358FQvmCLvZGSkHA0PNszx~Oh65NnHIQ0uSFMaiuHHzBw5FhusjIo7eIstmDRPje9~I0P9sGDXp8JzwoV0doN21-gRwOetGKLQgeL1c~BUpREsnE4L51sjqAkIMxyL8ao~U2m4kCg3Br4J8iVj66AcKZ391NkC0zT15d8oxLZbsIqqMVNUZOKnntZYUKjCYyE5LLiKWK-kiMraSeoGKxGo99XpIRbO5j9HplwkhZfKYAdbi3SlZtPlT3kej3p1HSO~rqAzTu7Uu5Qgf3Ws4zRyEtJnzN3zJDWLz1n3NK8ksjVA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="me standing" className='w-16 lg:hidden pb-12' />
+    <img src={AboutEmote} alt="me standing" className='w-[20%] lg:hidden pb-12' />
     <div className='lg:mt-12'>
     <Link to='contact' smooth={true} offset={-30}><ButtonInvert text='contact' className=''/></Link>
     </div>

@@ -4,6 +4,8 @@ import Button from '../components/Button'
 
 import { Link } from 'react-router-dom'
 
+import SkillsEmote from '../img/Skills_emote.png'
+
 const Skills = () => {
   return (
     <div name='skills'>
@@ -12,7 +14,7 @@ const Skills = () => {
 
             <div className='flex justify-center gap-6'>
                 <div>
-                    <img src="https://s3-alpha-sig.figma.com/img/8a46/df1a/d5d5d856705986794befdbba3ba4ddf3?Expires=1676246400&Signature=kq9MkvNrSgAs2~WzrP14CYYt1anIEMspnFytnV2RxRTG-tRIDPsL1F340bbjJzAlgpAJ-OXYjUzluvoo7UHMAdxx3sdhexJfU2mFvZVo-ylw7nsnh3goapcPXvYllLd5YmbpBdaeaUN7oPtSVPqVXobCkOzjnS-8xxnlRHDOSaNHgLoUff1~y2m5B78d572MwiN0CfztWGHNunZDeYZIiUMa3o37xcLM-lUM9boM5SzbE7sOBcCB~sbBGUgBcqOJnaKXdEwgj5I2oAFZ-FKd~zbmjLDUuPC1o9mk4L0EU-qRz~JALEscmodjo3MAA1g-wN58udghtOg1luuh0vvSZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" className='w-20 lg:hidden' alt="" />
+                    <img src={SkillsEmote} className='w-28 lg:hidden' alt="" />
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:mt-12'>
                     <p className='text-1xl lg:text-2xl'>Web Developing</p>
