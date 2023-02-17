@@ -13,7 +13,7 @@ const Navbar = () => {
 const [nav, setNav] = useState(false);
 
   return (
-    <div className='my-8 mx-12 pt-8'>
+    <div className='my-8 mx-4 ml-12 pt-8'>
       <div className='hidden md:flex justify-between items-center'>
       <h1 className='text-1xl text-white lg:hidden'>Eric Boudreaux</h1>
         
@@ -40,7 +40,7 @@ const [nav, setNav] = useState(false);
         <TiThMenu onClick={() => setNav(!nav)} className='cursor-pointer z-30' size={30}/>
       </div>
       <div className={nav ? '  md:hidden h-screen fixed w-full top-0 left-0 z-30 ease-in duration-200 bg-black' : ' md:hidden h-screen fixed w-full left-[-100%] top-0 z-30 ease-in duration-200 bg-black'}>
-      <FaWindowClose onClick={() => setNav(!nav)} className='absolute top-8 right-24 text-white cursor-pointer z-50' size={30}/>
+      <FaWindowClose onClick={() => setNav(!nav)} className='absolute top-8 right-16 text-white cursor-pointer z-50' size={30}/>
       <div className='flex justify-center'>
         <img src={mobileMe} alt="/me waving" className='w-[30%] h-[30%] pt-12 my-auto'/>
 

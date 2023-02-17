@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <div name='contact'>
-    <div className='bg-[var(--primary-1)] mt-24 w-[90%] mx-auto'>
+    <div className='bg-[var(--primary-1)] mt-24 w-[90%] mx-auto ml-12 md:ml-0'>
         <div className='flex pl-12 pt-12'>
             <div className='md:basis-2/3'>
             <h1 className='lg:text-left text-4xl lg:text-5xl'>Reach out!</h1>

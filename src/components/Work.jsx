@@ -19,7 +19,7 @@ import chatter from '../img/chatter_website.png'
 
 const Work = () => {
   return (
-    <div name='work' className='text-white mt-40'>
+    <div name='work' className='text-white mt-40 ml-6 w-full md:ml-0'>
         <h1 className='text-center lg:text-left lg:ml-24 text-3xl my-12'>My work</h1>
         <div className='flex flex-col gap-4'>
             {/* card 1 */}
