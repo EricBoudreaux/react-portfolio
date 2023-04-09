@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
+
 import Button from './/Button'
 
 
@@ -18,11 +19,35 @@ import chatter from '../img/chatter_website.png'
 
 
 const Work = () => {
+
+
+
+    //  ---Animate on scroll-----
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position)
+  
+  }
+  
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true});
+  
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      }
+  }, []);
+
+
   return (
     <div name='work' className='text-white mt-40 ml-6 w-full md:ml-0'>
-        <h1 className='text-center lg:text-left lg:ml-24 text-3xl my-12'>My work</h1>
+        <h1 className='text-center lg:text-left lg:ml-24 text-3xl lg:text-5xl my-12'>My work</h1>
         <div className='flex flex-col gap-4'>
+
+
             {/* card 1 */}
+            <div className={scrollPosition > 1200 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -54,9 +79,12 @@ const Work = () => {
 
                 </div>
             </div>
+            </div>
 
 
             {/* card 2 */}
+
+            <div className={scrollPosition > 1500 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -89,7 +117,10 @@ const Work = () => {
 
                 </div>
             </div>
+
+            </div>
             {/* card 3 */}
+            <div className={scrollPosition > 1800 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -122,7 +153,9 @@ const Work = () => {
 
                 </div>
             </div>
+            </div>
             {/* card 4 */}
+            <div className={scrollPosition > 2100 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -153,6 +186,7 @@ const Work = () => {
 
                 </div>
             </div>
+        </div>
         </div>
         {/* <div className='flex justify-center mt-12 mb-20'>
             <Button text='Load more' />

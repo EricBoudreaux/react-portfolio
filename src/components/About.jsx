@@ -2,31 +2,53 @@ import React, { useState, useEffect} from 'react'
 import { Link } from 'react-scroll'
 import ButtonInvert from './ButtonInvert'
 
+import 'animate.css';
+
 import AboutEmote from '../img/About_emote.png'
 
 
 
 const About = () => {
+    
 
+//   -----Dynamic horizontal scroll(doesn't work yet)-----
 
-  const [boxMargin, setBoxMargin] = useState('-80px')
-  const handleScroll = () => {
-      const position = window.pageYOffset;
+//   const [boxMargin, setBoxMargin] = useState('-80px')
+//   const handleScroll = () => {
+//       const position = window.pageYOffset;
 
-      setBoxMargin(position + 'px')
+//       setBoxMargin(position + 'px')
 
-  }
+//   }
   
-  useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true});
+//   useEffect(() => {
+//       window.addEventListener('scroll', handleScroll, { passive: true});
   
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      }
-  }, []);
+//       return () => {
+//           window.removeEventListener('scroll', handleScroll);
+//       }
+//   }, []);
+
+//  ---Animate on scroll-----
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position)
+
+}
+
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true});
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    }
+}, []);
 
 
   return (
+    <div className={scrollPosition > 500 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-700'}>
     <div name='about' className='bg-[var(--primary-1)] ml-12 mt-40 lg:mt-[-80px] pt-12 lg:p-20 xl:p-24 lg:ml-[-60px]'>
         <h1 className='text-center text-[40px]'>All about me</h1>
         <p className='mt-12 px-12 mx-auto text-[12px] sm:text-[16px]'>When I was a kid I was introduced to computers from 
@@ -48,6 +70,7 @@ const About = () => {
     </div>
     </div>
 </div>  
+</div>
   )
 }
 
