@@ -47,7 +47,7 @@ const Work = () => {
 
 
             {/* card 1 */}
-            <div className={scrollPosition > 1200 ? 'z-50 right-14 lg:relative bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-300'}>
+            <div className={scrollPosition > 1200 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -84,7 +84,7 @@ const Work = () => {
 
             {/* card 2 */}
 
-            <div className={scrollPosition > 1500 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-300'}>
+            <div className={scrollPosition > 1500 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -120,7 +120,7 @@ const Work = () => {
 
             </div>
             {/* card 3 */}
-            <div className={scrollPosition > 1800 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-300'}>
+            <div className={scrollPosition > 1800 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
@@ -155,7 +155,7 @@ const Work = () => {
             </div>
             </div>
             {/* card 4 */}
-            <div className={scrollPosition > 2100 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-300'}>
+            <div className={scrollPosition > 2100 ? 'z-50 lg:relative right-14 bottom-5 ease-in duration-300' : 'z-50 lg:relative right-[-130%] bottom-5 ease-in duration-7'}>
             <div className='bg-[var(--primary-1)] w-[90%] lg:w-[180%] lg:ml-12 mx-auto'>
                 <div className='flex flex-col md:flex-row  lg:w-[50%] p-4'>
                     <div className='basis-1/2'>
